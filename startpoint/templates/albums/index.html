@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="content">
+	{% for album in albums %}
+	<div class="album-details">
+		<h2>{{ album.title }}</h2>
+
+		<li>{{ album.artist.name }} - {{ album.year }}</li>
+
+	</div>
+	{% endfor %}
+
+</section>
+{% endblock %}
