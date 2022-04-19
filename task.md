@@ -17,7 +17,7 @@ In your application you should be able to perform the following actions:
 
 #### Setting up the app
 
-* Setp 1: Create a database
+* Step 1: Create a database
 
 ```bash
 createdb album_manager

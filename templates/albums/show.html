@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+        <p>Artist: {{ album.artist.name }}</p>
+        <p>Album: {{ album.title }}</p>
+        <p>Released: {{ album.year }}</p>
+        <p>Stock: {{ album.stock_level }}</p>
+    </div>
+    <div class="buttons">
+      <form class="delete-form" action="/albums/{{album.id}}/delete" method="POST">
+        <button>Delete</button>
+      </form>
+    </div>
+{% endblock content %}
